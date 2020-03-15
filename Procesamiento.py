@@ -9,6 +9,6 @@ class Procesamiento:
                 numeroElementos = len(cadena)
                 return [numeroElementos, 0, 0, 0]
             else:
-                return [1,2,0,0]
+                return [1,int(cadena),0,0]
 
 
