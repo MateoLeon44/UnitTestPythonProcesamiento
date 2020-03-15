@@ -1,3 +1,5 @@
+import math
+
 class Procesamiento:
     def procesar(self, cadena):
         if cadena == "":
@@ -6,7 +8,10 @@ class Procesamiento:
             if "," in cadena:
                 numeroElementos = 0
                 cadena = cadena.split(",")
-                numeroMinimo = min(cadena)
+                numeroMinimo = math.inf
+                for numero in cadena:
+                    if int(numero) <= numeroMinimo:
+                        numeroMinimo = int(numero)
                 numeroElementos = len(cadena)
                 return [numeroElementos, int(numeroMinimo), 0, 0]
             else:
