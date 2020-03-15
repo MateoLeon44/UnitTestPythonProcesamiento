@@ -17,6 +17,6 @@ class Procesamiento:
                 for numeroMax in cadena:
                     if int(numeroMax) >= numeroMaximo:
                         numeroMaximo = int(numeroMax)
-                return [numeroElementos, int(numeroMinimo), int(numeroMaximo), 0]
+                return [numeroElementos, int(numeroMinimo), int(numeroMaximo), 6]
             else:
                 return [1, int(cadena), int(cadena), int(cadena)]
