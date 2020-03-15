@@ -4,5 +4,4 @@ from Procesamiento import Procesamiento
 
 class ProcesamientoTest(TestCase):
     def test_cadenaVacia(self):
-        self.assertEquals(Procesamiento().procesar(""),0,"Cadena vacía")
-        
+        self.assertEquals(Procesamiento().procesar(""),[0,0,0,0],"Cadena vacía")

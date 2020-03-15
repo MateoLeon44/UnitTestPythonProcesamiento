@@ -1,3 +1,4 @@
 class Procesamiento:
     def procesar(self,cadena):
-        return 0
+        if cadena == "":
+            return [0,0,0,0]
