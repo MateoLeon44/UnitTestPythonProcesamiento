@@ -9,10 +9,14 @@ class Procesamiento:
                 numeroElementos = 0
                 cadena = cadena.split(",")
                 numeroMinimo = math.inf
+                numeroMaximo = 0
                 for numero in cadena:
                     if int(numero) <= numeroMinimo:
                         numeroMinimo = int(numero)
                 numeroElementos = len(cadena)
-                return [numeroElementos, int(numeroMinimo), 3, 0]
+                for numeroMax in cadena:
+                    if int(numeroMax) >= numeroMaximo:
+                        numeroMaximo = int(numeroMax)
+                return [numeroElementos, int(numeroMinimo), int(numeroMaximo), 0]
             else:
                 return [1, int(cadena), int(cadena), 0]
