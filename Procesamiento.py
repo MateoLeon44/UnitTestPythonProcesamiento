@@ -7,7 +7,7 @@ class Procesamiento:
                 numeroElementos = 0
                 cadena = cadena.split(",")
                 numeroElementos = len(cadena)
-                return [numeroElementos, 0, 0, 0]
+                return [numeroElementos, 2, 0, 0]
             else:
                 return [1,int(cadena),0,0]
 
