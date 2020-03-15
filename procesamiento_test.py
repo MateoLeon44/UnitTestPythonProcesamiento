@@ -18,3 +18,5 @@ class ProcesamientoTest(TestCase):
         self.assertEquals(Procesamiento().procesar(""),[0,0,0,0],"Cadena vacía")
     def test_numeroDeElementosUnNumero(self):
         self.assertEquals(Procesamiento().procesar("2"),1,"Un número")
+    def test_numeroDeElementosDosNumeros(self):
+        self.assertEquals(Procesamiento().procesar("2,3"),2,"Un número")
