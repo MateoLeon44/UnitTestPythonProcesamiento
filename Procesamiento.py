@@ -4,7 +4,10 @@ class Procesamiento:
             return [0,0,0,0]
         elif cadena != "":
             if "," in cadena:
-                return 2
+                numeroElementos = 0
+                cadena = cadena.split(",")
+                numeroElementos = len(cadena)
+                return numeroElementos
             else:
                 return 1
 
