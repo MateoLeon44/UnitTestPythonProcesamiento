@@ -13,6 +13,6 @@ class Procesamiento:
                     if int(numero) <= numeroMinimo:
                         numeroMinimo = int(numero)
                 numeroElementos = len(cadena)
-                return [numeroElementos, int(numeroMinimo), 0, 0]
+                return [numeroElementos, int(numeroMinimo), 3, 0]
             else:
                 return [1, int(cadena), int(cadena), 0]
