@@ -32,3 +32,5 @@ class ProcesamientoTest(TestCase):
         self.assertEquals(Procesamiento().procesar("3"), [1,3,3,0], "N números")
     def test_NumeroDeElementosMinimoMaximoDosNumeros(self):
         self.assertEquals(Procesamiento().procesar("3,2"), [2,2,3,0], "N números")
+    def test_NumeroDeElementosMinimoMaximoNNumeros(self):
+        self.assertEquals(Procesamiento().procesar("3,2,8,6"), [4,2,8,0], "N números")
