@@ -4,7 +4,7 @@ class Procesamiento:
             return [0,0,0,0]
         elif cadena != "":
             if "," in cadena:
-                pass
+                return 2
             else:
                 return 1
 
