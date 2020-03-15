@@ -1,3 +1,3 @@
-class Procesamiento(self):
+class Procesamiento:
     def procesar(self,cadena):
         pass
