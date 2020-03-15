@@ -19,4 +19,4 @@ class Procesamiento:
                         numeroMaximo = int(numeroMax)
                 return [numeroElementos, int(numeroMinimo), int(numeroMaximo), 0]
             else:
-                return [1, int(cadena), int(cadena), 1]
+                return [1, int(cadena), int(cadena), int(cadena)]
