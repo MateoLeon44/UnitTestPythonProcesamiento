@@ -15,4 +15,4 @@ class Procesamiento:
                 numeroElementos = len(cadena)
                 return [numeroElementos, int(numeroMinimo), 0, 0]
             else:
-                return [1, int(cadena), 0, 0]
+                return [1, int(cadena), 3, 0]
