@@ -3,5 +3,9 @@ class Procesamiento:
         if cadena == "":
             return [0,0,0,0]
         elif cadena != "":
-            return 1
+            if "," in cadena:
+                return 0
+            else:
+                return 1
+
 
