@@ -10,13 +10,15 @@ class Procesamiento:
                 cadena = cadena.split(",")
                 numeroMinimo = math.inf
                 numeroMaximo = 0
+                promedio = 0
                 for numero in cadena:
+                    promedio = promedio + int(numero)
                     if int(numero) <= numeroMinimo:
                         numeroMinimo = int(numero)
+                    if int(numero) >= numeroMaximo:
+                       numeroMaximo = int(numero)
                 numeroElementos = len(cadena)
-                for numeroMax in cadena:
-                    if int(numeroMax) >= numeroMaximo:
-                        numeroMaximo = int(numeroMax)
-                return [numeroElementos, int(numeroMinimo), int(numeroMaximo), 6]
+                promedio = promedio / numeroElementos
+                return [numeroElementos, int(numeroMinimo), int(numeroMaximo), promedio]
             else:
                 return [1, int(cadena), int(cadena), int(cadena)]
