@@ -39,3 +39,5 @@ class ProcesamientoTest(TestCase):
         self.assertEquals(Procesamiento().procesar("3"), [1,3,3,3], "N números")
     def test_NumeroDeElementosMinimoMaximoPromedioDosNumeros(self):
         self.assertEquals(Procesamiento().procesar("3,9"), [2,3,9,6], "N números")
+    def test_NumeroDeElementosMinimoMaximoPromedioNNumeros(self):
+        self.assertEquals(Procesamiento().procesar("3,9,10,15"), [4,3,15,9.25], "N números")
